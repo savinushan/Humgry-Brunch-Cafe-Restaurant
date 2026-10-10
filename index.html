@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10110f">
+<meta name="description" content="Humgry Brunch Café & Restaurant in Kandy, Sri Lanka. Brunch, kottu, pasta, rice, coffee and refreshing drinks.">
+<title>Humgry Brunch Café & Restaurant | Kandy</title>
+<style>
+:root{--bg:#10110f;--panel:#191b17;--cream:#f6f0e4;--muted:#c5c0b4;--green:#c6e36b;--orange:#f1a35b;--line:#34372d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.4px}.logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#171910;font-size:22px}
+.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:700}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;background:var(--green);color:#171910;font-weight:800;border:0;cursor:pointer;font-size:14px}.btn.outline{background:transparent;border:1px solid #6d725c;color:var(--cream)}
+.hero{padding:54px 0 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:3px;font-weight:800;font-size:12px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-2.7px;margin:18px 0}h1 span{color:var(--green)}
+.lead{font-size:17px;color:var(--muted);max-width:520px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.quickfacts{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:13px}.quickfacts strong{color:var(--cream);display:block;font-size:15px}
+.hero-photo{min-height:440px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(160deg,rgba(12,15,9,.05),rgba(12,15,9,.8)),url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:0 22px 70px #0008}
+.photo-tag{position:absolute;left:22px;bottom:22px;padding:15px 18px;background:#141610df;border:1px solid #ffffff25;border-radius:16px;backdrop-filter:blur(8px)}.photo-tag strong{display:block;font-size:17px}.photo-tag span{font-size:12px;color:var(--muted)}
+section{padding:65px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}.section-head h2{font-size:clamp(30px,4vw,45px);line-height:1.1;letter-spacing:-1.2px;margin:8px 0}.section-head p{color:var(--muted);max-width:440px;margin:0}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.dish{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}.dish .emoji{font-size:28px}.dish h3{margin:14px 0 4px;font-size:19px}.dish p{margin:0;color:var(--muted);font-size:13px}.price{color:var(--green);font-weight:900;margin-top:14px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}.about-card{background:linear-gradient(140deg,#272d1d,#161812);padding:34px;border:1px solid var(--line);border-radius:24px}.about-card h2{font-size:36px;line-height:1.12;margin:12px 0}.about-card p{color:var(--muted)}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.feature{padding:15px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff10}.feature strong{display:block}.feature span{font-size:12px;color:var(--muted)}
+.visit{background:var(--cream);color:#171910;border-radius:28px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.visit p{color:#626354}.visit .btn{background:#20251a;color:white}.visit .btn.outline{color:#20251a;border-color:#9da08e}.visit h2{font-size:38px;line-height:1.1;margin:10px 0}
+footer{padding:28px 0 40px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.mobile-cta{display:none}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:28px;gap:28px}.hero-photo{min-height:320px;order:-1}h1{letter-spacing:-1.7px}.menu-grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.visit{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.mobile-cta{display:flex;position:fixed;bottom:12px;left:4%;width:92%;z-index:10;gap:10px;padding:8px;background:#171910ed;border:1px solid #ffffff25;border-radius:999px;backdrop-filter:blur(12px)}.mobile-cta .btn{flex:1;padding:11px 8px}footer{padding-bottom:90px}}
+@media(max-width:420px){.menu-grid{grid-template-columns:1fr}.quickfacts{gap:18px}.visit{padding:24px}.about-card{padding:24px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav>
+    <a class="brand" href="#home"><span class="logo">H</span><span>HUMGRY BRUNCH<small>CAFÉ & RESTAURANT</small></span></a>
+    <div class="navlinks"><a href="#menu">Menu</a><a href="#story">Our vibe</a><a href="#visit">Find us</a></div>
+    <a class="btn" href="https://wa.me/94776057554?text=Hi%20Hungry%20Brunch%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener">Contact us ↗</a>
+  </nav>
+</header>
+<main id="home">
+<div class="wrap hero">
+  <div>
+    <div class="eyebrow">Good food. Good mood.</div>
+    <h1>Come hungry.<br><span>Leave happy.</span></h1>
+    <p class="lead">Your cosy café stop in the heart of Kandy — from satisfying kottu and flavour-packed rice to creamy pasta, brunch favourites and refreshing drinks.</p>
+    <div class="actions"><a class="btn" href="#menu">Explore the menu ↓</a><a class="btn outline" href="https://maps.app.goo.gl/qBp3zUppFoxhkQsAA" target="_blank" rel="noopener">Get directions ↗</a></div>
+    <div class="quickfacts"><div><strong>Freshly made</strong>Made with care</div><div><strong>Dine-in & pickup</strong>Your way to enjoy</div><div><strong>Kandy, Sri Lanka</strong>City-centre location</div></div>
+  </div>
+  <div class="hero-photo" role="img" aria-label="Fresh food served at a café">
+    <div class="photo-tag"><strong>A little something for everyone</strong><span>Brunch · Rice · Kottu · Pasta · Coffee</span></div>
+  </div>
+</div>
+
+<section id="menu">
+<div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Made to satisfy</div><h2>Customer favourites</h2></div><p>A taste of what you can enjoy at Humgry Brunch. Ask the team for the latest menu and availability.</p></div>
+  <div class="menu-grid">
+    <article class="dish"><div><div class="emoji">🍛</div><h3>Rice & Nasi Goreng</h3><p>Comforting rice dishes with bold, savoury flavour.</p></div><div class="price">From Rs. 650</div></article>
+    <article class="dish"><div><div class="emoji">🍜</div><h3>Kottu & Noodles</h3><p>A hearty favourite for lunch, dinner or sharing.</p></div><div class="price">From Rs. 600</div></article>
+    <article class="dish"><div><div class="emoji">🍝</div><h3>Creamy Pasta</h3><p>Rich, comforting pasta for a satisfying meal.</p></div><div class="price">From Rs. 1,100</div></article>
+    <article class="dish"><div><div class="emoji">🥪</div><h3>Sandwiches & Wraps</h3><p>Easy bites for a relaxed café visit.</p></div><div class="price">From Rs. 800</div></article>
+    <article class="dish"><div><div class="emoji">🥑</div><h3>Brunch & Smoothie Bowls</h3><p>Colourful, fresh options for your brunch break.</p></div><div class="price">Ask for today's options</div></article>
+    <article class="dish"><div><div class="emoji">☕</div><h3>Coffee & Coolers</h3><p>Take a pause with coffee, smoothies and refreshing drinks.</p></div><div class="price">From Rs. 600</div></article>
+  </div>
+</div>
+</section>
+
+<section id="story">
+<div class="wrap about">
+  <div class="about-card"><div class="eyebrow">Your café moment</div><h2>Good flavours.<br>Warm welcomes.</h2><p>Whether you're catching up with friends, stopping by for lunch or looking for a relaxed dinner in Kandy, Humgry Brunch is a spot to slow down and enjoy a good meal.</p><a class="btn" href="https://wa.me/94776057554" target="_blank" rel="noopener">Chat with us ↗</a></div>
+  <div><div class="eyebrow">More than a meal</div><h2 style="font-size:34px;line-height:1.15">A laid-back place to meet, eat and recharge.</h2><p style="color:var(--muted)">Choose a hearty plate, share a few bites, or settle in with a drink. The menu brings together café favourites and satisfying meals for different appetites.</p><div class="feature-list"><div class="feature"><strong>🍽️ Dine-in</strong><span>Enjoy your meal here</span></div><div class="feature"><strong>🥡 Takeaway</strong><span>Good food on the go</span></div><div class="feature"><strong>👋 Friendly service</strong><span>Made for easy visits</span></div><div class="feature"><strong>🎲 Board games</strong><span>Ask the team what's available</span></div></div></div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap visit">
+  <div><div class="eyebrow" style="color:#596b2c">Come by</div><h2>Find us in Kandy.</h2><p>No. 99, 2 DS Senanayake Veediya, Kandy 20000, Sri Lanka</p><p><strong>Call:</strong> <a href="tel:+94776057554">077 605 7554</a><br><strong>Also:</strong> <a href="tel:+94763271511">076 327 1511</a></p><p><strong>Usual hours:</strong> around 11:00 AM – 9:30 PM. Please call to confirm today's hours.</p></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;gap:12px"><a class="btn" href="https://maps.app.goo.gl/qBp3zUppFoxhkQsAA" target="_blank" rel="noopener">Open Google Maps ↗</a><a class="btn outline" href="https://wa.me/94776057554?text=Hi%20Hungry%20Brunch%2C%20I%27d%20like%20to%20ask%20about%20the%20menu." target="_blank" rel="noopener">Ask about the menu on WhatsApp ↗</a><p style="font-size:12px">Menu prices and opening times may change. Please confirm directly with the restaurant.</p></div>
+</div>
+</section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Humgry Brunch Café & Restaurant</span><span>Made with care in Kandy, Sri Lanka</span></footer>
+<div class="mobile-cta"><a class="btn" href="tel:+94776057554">☎ Call</a><a class="btn" href="https://wa.me/94776057554" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="https://maps.app.goo.gl/qBp3zUppFoxhkQsAA" target="_blank" rel="noopener">Map ↗</a></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
